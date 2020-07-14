@@ -1,12 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.finger" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Finger</name>
+    <name>FINGER GPS</name>
     <description>
-        Finger
+        FINGER GPS
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        Team
+    <author email="vaporic@gmail.com" href="https://softcoders.com.mx/">
+        Softcoders Team
     </author>
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <plugin name="cordova-plugin-battery-status" />
+    <plugin name="cordova-plugin-media-capture" />
+    <plugin name="cordova-plugin-console" />
+    <plugin name="cordova-plugin-contacts" />
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-device-motion" />
+    <plugin name="cordova-plugin-device-orientation" />
+    <plugin name="cordova-plugin-dialogs" />
+    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-media" />
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-vibration" />
+    <plugin name="cordova-plugin-actionsheet" />
+    <plugin name="cordova-plugin-native-spinner" spec="~1.1.3" />
+    <plugin name="cordova-plugin-spinner-dialog" spec="https://github.com/Paldom/SpinnerDialog.git" />
+    <plugin name="cordova-plugin-camera" version="2.4.1" source="npm" />
     <content src="index.html" />
     <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
 </widget>
