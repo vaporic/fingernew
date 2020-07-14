@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+    <div class="page-content" id="main-stack">
+      <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <nav class="w-nav-menu nav-menu bg-gradient" role="navigation">
+            <div class="nav-menu-header">
+              <div class="logo">Manhattan</div>
+            </div>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="home.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-home-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Home Page</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="features.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-box-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Features</div>
+              <div class="nav-menu-text-right">6</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="calendar.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-calendar-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Calendar</div>
+            </a>
+            <div class="w-dropdown dropdown-container" data-delay="0">
+              <div class="w-dropdown-toggle w-clearfix nav-menu-link dropdown">
+                <div class="icon-list-menu">
+                  <div class="icon ion-ios-home-outline"></div>
+                </div>
+                <div class="nav-menu-titles">App Interface</div>
+                <div class="w-icon-dropdown-toggle dropdown-icon"></div>
+              </div>
+              <nav class="w-dropdown-list drop-down-list">
+                <a class="w-clearfix w-inline-block nav-menu-link" href="index.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-home-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Splash Screen</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="login.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-download-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Login</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="signup.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-cloud-upload-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Sign Up</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="forgot.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-unlocked-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Remember Password</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="messages.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-albums-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Messages</div>
+                  <div class="nav-menu-text-right">3</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="chat.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-chatboxes-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Chat</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="about-us.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-person-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">About the App</div>
+                </a>
+              </nav>
+            </div>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="gallery.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-camera-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Gallery</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="portfolio.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="ion-ios-folder-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Portfolio</div>
+              <div class="nav-menu-text-right">8</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="videos.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-film-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Videos</div>
+            </a>
+            <div class="w-dropdown dropdown-container" data-delay="0">
+              <div class="w-dropdown-toggle w-clearfix nav-menu-link dropdown">
+                <div class="icon-list-menu">
+                  <div class="icon ion-ios-home-outline"></div>
+                </div>
+                <div class="nav-menu-titles">Pages</div>
+                <div class="w-icon-dropdown-toggle dropdown-icon"></div>
+              </div>
+              <nav class="w-dropdown-list drop-down-list">
+                <a class="w-clearfix w-inline-block nav-menu-link" href="todo-list.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-list-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">To Do List</div>
+                  <div class="nav-menu-text-right">8</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="addnew.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-checkmark-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Create Task</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="blog-post.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-compose-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Blog Post</div>
+                </a>
+                <a class="w-clearfix w-inline-block nav-menu-link" href="groups.html" data-load="1">
+                  <div class="icon-list-menu">
+                    <div class="icon ion-ios-keypad-outline"></div>
+                  </div>
+                  <div class="nav-menu-titles">Categories</div>
+                  <div class="nav-menu-text-right">9</div>
+                </a>
+              </nav>
+            </div>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="news.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-paper-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Blog</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="maps.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-location-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Maps</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="contact.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-at-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Contact</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="social-media.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-social-facebook-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Social Media</div>
+              <div class="nav-menu-text-right">3</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="settings.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-gear-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Settings</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link last" href="terms.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-bookmarks-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Terms and Conditions</div>
+            </a>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+          </nav>
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title">January</div>
+          <div class="w-nav-button navbar-button left" id="menu-button" data-ix="hide-navbar-icons">
+            <div class="navbar-button-icon home-icon">
+              <div class="bar-home-icon top"></div>
+              <div class="bar-home-icon middle"></div>
+              <div class="bar-home-icon bottom"></div>
+            </div>
+          </div>
+          <a class="w-inline-block navbar-button right" href="#">
+            <div class="navbar-button-icon icon ion-ios-plus-empty"></div>
+          </a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="calendar">
+          <div class="calendar-header">
+            <ul class="w-clearfix calendar-days">
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Sun</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Mon</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Tue</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Wed</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Thu</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Fri</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event header">Sat</div>
+              </li>
+            </ul>
+          </div>
+          <div class="calendar-body">
+            <ul class="w-clearfix calendar-days">
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event semitrans">31</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">1</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">2</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">3</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">4</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">5</div>
+                <div class="event-bullet"></div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">6</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">7</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">8</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">9</div>
+                <div class="event-bullet"></div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">10</div>
+                <div class="event-bullet"></div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">11</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">12</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">13</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">14</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">15</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">16</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">17</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">18</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">19</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">20</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">21</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">22</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">23</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">24</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">25</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">26</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">27</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">28</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">29</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">30</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event">31</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event semitrans">1</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event semitrans">2</div>
+              </li>
+              <li class="calendar-cell-day">
+                <div class="text-calendar-event semitrans">3</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="list list-events">
+          <li class="list-calendar-events" data-ix="list-item">
+            <a class="w-clearfix w-inline-block" href="addnew.html" data-load="1">
+              <div class="calendar-col-left">
+                <div class="event-title">Meeting with Andrew</div>
+                <div class="w-clearfix text-event-wrap">
+                  <div class="left-text-icon icon ion-ios-clock-outline"></div>
+                  <div class="event-text">8 - 10am</div>
+                  <div class="left-text-icon icon ion-ios-location-outline"></div>
+                  <div class="event-text">Manhattan</div>
+                </div>
+              </div>
+              <div class="w-clearfix calendar-col-right">
+                <div class="image-calendar-event"><img width="28" src="images/placeholder.png">
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list-calendar-events" data-ix="list-item">
+            <a class="w-clearfix w-inline-block" href="addnew.html" data-load="1">
+              <div class="calendar-col-left">
+                <div class="event-title">Meeting with Ana</div>
+                <div class="w-clearfix text-event-wrap">
+                  <div class="left-text-icon icon ion-ios-clock-outline"></div>
+                  <div class="event-text">1 - 2am</div>
+                  <div class="left-text-icon icon ion-ios-location-outline"></div>
+                  <div class="event-text">Restaurant</div>
+                </div>
+              </div>
+              <div class="w-clearfix calendar-col-right">
+                <div class="image-calendar-event"><img width="28" src="images/placeholder.png">
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list-calendar-events" data-ix="list-item">
+            <a class="w-clearfix w-inline-block" href="addnew.html" data-load="1">
+              <div class="calendar-col-left">
+                <div class="event-title">Meeting with Sophie</div>
+                <div class="w-clearfix text-event-wrap">
+                  <div class="left-text-icon icon ion-ios-clock-outline"></div>
+                  <div class="event-text">10 - 11am</div>
+                  <div class="left-text-icon icon ion-ios-location-outline"></div>
+                  <div class="event-text">Office</div>
+                </div>
+              </div>
+              <div class="w-clearfix calendar-col-right">
+                <div class="image-calendar-event"><img width="28" src="images/placeholder.png">
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list-calendar-events" data-ix="list-item">
+            <a class="w-clearfix w-inline-block" href="addnew.html" data-load="1">
+              <div class="calendar-col-left">
+                <div class="event-title">Meeting with David</div>
+                <div class="w-clearfix text-event-wrap">
+                  <div class="left-text-icon icon ion-ios-clock-outline"></div>
+                  <div class="event-text">4 - 6pm</div>
+                  <div class="left-text-icon icon ion-ios-location-outline"></div>
+                  <div class="event-text">Headquarters</div>
+                </div>
+              </div>
+              <div class="w-clearfix calendar-col-right">
+                <div class="image-calendar-event"><img width="28" src="images/placeholder.png">
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

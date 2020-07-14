@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Splash Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="apple-touch-icon" href="images/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<section class="w-section mobile-wrapper">
+    <div class="page-content bg-gradient" id="main-stack" data-scroll="0" data-splash="2000" data-redirect="login.html">
+        <div class="body padding">
+            <div class="splash-logo">
+                <div class="loading-icon splash">
+                    <div class="navbar-button-icon icon ion-load-d"></div>
+                </div>
+            </div>
+            <div class="bottom-section padding text-centered">
+                <div class="separator-big"></div>
+                <div class="link-upper">FINGER GPS</div>
+                <div class="separator-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+        <div class="loading-icon">
+            <div class="navbar-button-icon icon ion-load-d"></div>
+        </div>
+    </div>
+</section>
+<script src="js/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ["Montserrat:400,700"]
+        }
+    });
+</script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!--[if lte IE 9]>
+<script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

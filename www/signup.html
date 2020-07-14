@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+    <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
+      <div class="w-nav navbar transparent" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title">Sign Up</div>
+          <a class="w-inline-block navbar-button" href="login.html" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+          </a>
+        </div>
+      </div>
+      <div class="body padding">
+        <div class="logo-login smaller"></div>
+        <div class="bottom-section padding">
+          <div class="w-form">
+            <form id="submit-form" name="email-form" action="#">
+              <div>
+                <label class="label-form light" for="full-name-field">FULL NAME</label>
+                <input class="w-input input-form light" id="full-name-field" type="text" name="full-name" data-name="full-name" required="required">
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <label class="label-form light" for="email-field">EMAIL</label>
+                <input class="w-input input-form light" id="email-field" type="email" name="email" data-name="email" required="required">
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <label class="label-form light" for="password-ield">PASSWORD</label>
+                <input class="w-input input-form light" id="password-ield" type="password" name="password" data-name="password" required="required">
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <label class="label-form light" for="birthday-field">BIRTHDAY</label>
+                <input class="w-input input-form light" id="birthday-field" type="text" name="birthday" data-name="birthday" required="required">
+              </div>
+              <div class="separator-button-input"></div>
+              <input class="w-button action-button" type="submit" value="Sign Up" data-wait="Please wait...">
+              <div class="separator-button"></div><a class="link-upper" href="login.html" data-load="1">Already have an account? <strong class="b-link">Sign in</strong></a>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+    <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
+      <div class="body padding">
+        <div class="logo-login"></div>
+        <div class="bottom-section padding">
+          <div class="w-form">
+            <form id="submit-form" name="email-form" action="#" data-redirect="home_en.html">
+              <div>                
+                <div>
+                  <label class="label-form black">LANGUAGE</label>
+                  <div class="separator-fields"></div>
+                  <select class="w-select input-form select" name="lang" id="lang">                    
+                    <option value="">SELECT LANGUAGE</option>
+                    <option value="es">ESPAÑOL</option>
+                    <option value="en" selected>ENGLISH</option>
+                  </select>
+                </div>
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <label class="label-form black" for="email-field">EMAIL</label>
+                <input class="w-input input-form" id="email-field" type="email" name="email" data-name="email" required="required">
+                <div class="separator-fields"></div>
+              </div>
+              <input class="w-button action-button grey" type="submit" value="LOGIN" data-wait="Please wait...">
+              <div class="separator-button"></div>
+              <!--a class="link-upper" href="signup.html" data-load="1">Don't have an account? <strong class="b-link">Sign Up</strong></a-->
+            </form>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="bottom: 0;text-align: center; border-top:7px solid red;width: 100%;padding-top: 5px;padding-bottom: 5px;">
+    <img src="images/logo-ifem.png" width="100" style="padding-right: 40px;">
+    <img src="images/logo-smme.png" width="130">
+  </div>
+
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

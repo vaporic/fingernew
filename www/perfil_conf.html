@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bienvenido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background: #E3E3E3;">
+  <section class="w-section mobile-wrapper" style="background: #E3E3E3;">
+    <div class="page-content" id="main-stack">
+      <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <nav class="w-nav-menu nav-menu bg-gradient-alt" role="navigation">
+            <div class="nav-menu-header">
+              <div class="logo">Menú</div>
+            </div>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="home.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-home-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Inicio</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="itinerario.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-clock-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Itinerario</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="programa.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-calendar-outline"></div>
+              </div>
+              <div class="nav-menu-titles">Programa</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="conferencistas.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-ios-people"></div>
+              </div>
+              <div class="nav-menu-titles">Conferencistas</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="auditorio.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-location"></div>
+              </div>
+              <div class="nav-menu-titles">Auditorio</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" href="transportacion.html" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-android-bus"></div>
+              </div>
+              <div class="nav-menu-titles">Transportación</div>
+            </a>
+            <a class="w-clearfix w-inline-block nav-menu-link" id="logout" href="#" data-load="1">
+              <div class="icon-list-menu">
+                <div class="icon ion-log-out"></div>
+              </div>
+              <div class="nav-menu-titles">Salir</div>
+            </a>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+            <div class="separator-bottom"></div>
+          </nav>
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title" id="name-conf"></div>
+          <a class="w-inline-block navbar-button" href="conferencistas.html" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+          </a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="home-container">
+          <div class="text-new no-borders">
+            <div class="separator-fields"></div>
+            <div style="text-align: center;width: 100%;">
+              <img src="" id="avatar-conf">
+            </div>
+              <div class="separator-fields"></div>
+              <div class="separator-fields"></div>
+              <p class="description-new" id="description-conf"></p>
+          </div>
+        </div>
+
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+  <script>
+    $(document).on("ready", function(){
+      var base_url = 'http://api.icem2018.com/api/v1';
+      var assets_url = 'https://icem2018.com/';     
+      var icem_customer = window.localStorage.getItem("icem_customer");                 
+      var goToPage = function(hrefPage){
+        document.location = hrefPage;
+      };
+
+      $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+             return null;
+          }
+          else{
+             return decodeURI(results[1]) || 0;
+          }
+      }
+
+      var conf_id = $.urlParam('id');
+
+      $.ajax({
+        type: 'GET',
+        url: base_url+'/speakers/'+conf_id,
+        beforeSend: function(){
+          $('.loading-mask').addClass('stop-loading');
+        },  
+        error: function(xhr, status, error) {
+            var err = JSON.parse(xhr.responseText);
+            if(!err.success){                          
+                navigator.notification.alert(err.message, null, '', 'Cerrar');          
+            }
+        },
+        success: function(data) {
+          if(data.success){
+              if(data.data.featured_image){
+                var avatar = assets_url+data.data.featured_image;
+              }else{
+                var avatar = "";
+              }
+
+              $("#avatar-conf").attr('src', avatar);
+              $("#name-conf").text(data.data.name);
+              $("#description-conf").html(data.data.description);
+          }                    
+        }
+      });
+
+    }); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bienvenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="apple-touch-icon" href="images/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background: #E3E3E3;">
+<section class="w-section mobile-wrapper" style="background: #E3E3E3;">
+    <div class="page-content" id="main-stack">
+        <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1"
+             data-easing="ease-out-quint" data-no-scroll="1">
+            <div class="w-container">
+                <nav class="w-nav-menu nav-menu bg-gradient-alt" role="navigation">
+                    <div class="nav-menu-header">
+                        <div class="logo">Menú</div>
+                    </div>
+                    <a class="w-clearfix w-inline-block nav-menu-link" href="home.html" data-load="1">
+                        <div class="icon-list-menu">
+                            <div class="icon ion-ios-home-outline"></div>
+                        </div>
+                        <div class="nav-menu-titles">Inicio</div>
+                    </a>
+                    <!--a class="w-clearfix w-inline-block nav-menu-link" href="itinerario.html" data-load="1">
+                      <div class="icon-list-menu">
+                        <div class="icon ion-ios-clock-outline"></div>
+                      </div>
+                      <div class="nav-menu-titles">Itinerario</div>
+                    </a>
+                    <a class="w-clearfix w-inline-block nav-menu-link" href="programa.html" data-load="1">
+                      <div class="icon-list-menu">
+                        <div class="icon ion-ios-calendar-outline"></div>
+                      </div>
+                      <div class="nav-menu-titles">Programa</div>
+                    </a>
+                    <a class="w-clearfix w-inline-block nav-menu-link" href="conferencistas.html" data-load="1">
+                      <div class="icon-list-menu">
+                        <div class="icon ion-ios-people"></div>
+                      </div>
+                      <div class="nav-menu-titles">Conferencistas</div>
+                    </a>
+                    <a class="w-clearfix w-inline-block nav-menu-link" href="auditorio.html" data-load="1">
+                      <div class="icon-list-menu">
+                        <div class="icon ion-location"></div>
+                      </div>
+                      <div class="nav-menu-titles">Auditorio</div>
+                    </a-->
+                    <a class="w-clearfix w-inline-block nav-menu-link" href="transportacion.html" data-load="1">
+                        <div class="icon-list-menu">
+                            <div class="icon ion-android-bus"></div>
+                        </div>
+                        <div class="nav-menu-titles">Inmuebles</div>
+                    </a>
+                    <a class="w-clearfix w-inline-block nav-menu-link" id="logout" href="#" data-load="1">
+                        <div class="icon-list-menu">
+                            <div class="icon ion-log-out"></div>
+                        </div>
+                        <div class="nav-menu-titles">Salir</div>
+                    </a>
+                    <div class="separator-bottom"></div>
+                    <div class="separator-bottom"></div>
+                    <div class="separator-bottom"></div>
+                </nav>
+                <div class="wrapper-mask" data-ix="menu-mask"></div>
+                <div class="navbar-title">Nomina Empleados</div>
+                <div class="w-nav-button navbar-button left" id="menu-button" data-ix="hide-navbar-icons">
+                    <div class="navbar-button-icon home-icon">
+                        <div class="bar-home-icon top"></div>
+                        <div class="bar-home-icon middle"></div>
+                        <div class="bar-home-icon bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="home-content">
+
+                <div style="padding-top: 20px; text-align: center;">
+                    <h5 style="margin-bottom: 20px;"><span id="name_inmueble"></span></h5>
+                    Selecciona un empleado
+
+                    <form style="padding: 20px;" id="form-empleados">
+                        <input type="text" placeholder="Buscar empleado..." class="w-input" id="search">
+                        <input type="submit" value="BUSCAR" class="w-button action-button grey">
+                    </form>
+
+                </div>
+
+                <div class="news-mask"></div>
+                <div class="news-container" style="margin-top: 30px;width: 100%;">
+                    <div class="loader" style="text-align: center;border: 1px solid:red;width: 100%;">
+                        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                        <br>
+                        <small>Cargando...</small>
+                    </div>
+
+                    <ul class="w-clearfix list-news" id="list-hot">
+
+
+                        <!--li class="list-item-new">
+                          <a class="w-inline-block link-blog-list" href="javascript: void();" data-load="1">
+                            <div class="image-new"></div>
+                            <div class="text-new">
+                              <h2 class="title-new">HOTEL PRESIDENTE INTERCONTINENTAL POLANCO</h2>
+                              <p class="description-new">
+                                <div style="background: #F2F2F2; color: #000;padding: 10px; margin-bottom: 10px;">
+                                  Salida Hotel - Auditorio: <strong>8:00am</strong><br>
+                                  Regreso Auditorio - Hotel: <strong>9:00pm</strong><br>
+                                </div>
+                                Campos Elíseos 218, Polanco, <br>
+                                Polanco IV Secc, 11560, <br>
+                                Ciudad de México
+                              </p>
+
+                              <a href=""><i class="icon ion-location"></i> Ver mapa</a>
+                            </div>
+                          </a>
+                        </li-->
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="page-content loading-mask" id="new-stack">
+            <div class="loading-icon">
+                <div class="navbar-button-icon icon ion-load-d"></div>
+            </div>
+        </div>
+</section>
+<script src="js/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ["Montserrat:400,700"]
+        }
+    });
+</script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!--[if lte IE 9]>
+<script src="js/placeholders.min.js"></script><![endif]-->
+<script>
+    $(document).on("ready", function () {
+        var base_url = 'http://gps.somostusideas.info/api';
+        var assets_url = 'https://icem2018.com/';
+        var icem_customer = window.localStorage.getItem("icem_customer");
+        var goToPage = function (hrefPage) {
+            document.location = hrefPage;
+        };
+
+        var sucursal_clave = location.search.split('sucursal=')[1];
+
+        $("#form-empleados").on("submit", function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'GET',
+                url: base_url + '/registro_asistencias?&search=' + 'CLAVE_SUCURSAL:' + sucursal_clave + ';NOMBRE_EMPLEADO:' + $("#search").val() + '&searchJoin=and',
+                beforeSend: function () {
+                    $('.loading-mask').addClass('stop-loading');
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    if (!err.success) {
+                        navigator.notification.alert(err.message, null, '', 'Cerrar');
+                    }
+                },
+                success: function (data) {
+                    if (data.success) {
+
+                        $.each(data.data, function (index, value) {
+                            $("#list-hot").html("");
+
+                            $("#list-hot").append('<li class="list-item-new">\n' +
+                                '            <a class="w-inline-block link-blog-list" href="javascript: void();" data-load="1">\n' +
+                                '              <img src="https://via.placeholder.com/400x250" style="width: 100%;">\n' +
+                                '              <div class="text-new">\n' +
+                                '                <h2 class="title-new" style="text-transform: uppercase;">' + value.NOMBRE + ' ' + value.APELLIDO_PATERNO + ' ' + value.APELLIDO_MATERNO + '</h2>\n' +
+                                '                <p class="description-new">\n NO_INTERNO : ' +
+                                value.NO_INTERNO +
+                                '                </p>\n' +
+                                '                <p class="description-new">\n EMPRESA : ' +
+                                value.EMPRESA +
+                                '                </p>\n' +
+                                '                </p>\n' +
+                                '                <p class="description-new">\n INMUEBLE : ' +
+                                value.INMUEBLE +
+                                '                </p>\n' +
+                                '                <p class="description-new">\n HORA ENTRADA : ' +
+                                value.HORA_ENTRADA +
+                                '                </p>\n' +
+                                '                <p class="description-new">\n HORA SALIDA : ' +
+                                value.HORA_SALIDA +
+                                '                </p>\n' +
+                                '                \n' +
+                                '                <div class="row">' +
+                                '                <div class="col-sm-6">' +
+                                '                <a href="#"><i class="icon ion-checkmark"></i> Verificar Asistencia</a>\n' +
+                                '                </div>' +
+                                '                <div class="col-sm-6">' +
+                                '                <a href="#"><i class="icon ion-checkmark"></i> Verificar Asistencia</a>\n' +
+                                '                </div>' +
+                                '                </div>' +
+                                '              </div>\n' +
+                                '            </a>\n' +
+                                '          </li>');
+                        });
+                    }
+                }
+            });
+        });
+
+
+        $.ajax({
+            type: 'GET',
+            url: base_url + '/registro_asistencias?search=' + sucursal_clave + '&searchFields=CLAVE_SUCURSAL:like',
+            beforeSend: function () {
+                $('.loading-mask').addClass('stop-loading');
+            },
+            error: function (xhr, status, error) {
+                var err = JSON.parse(xhr.responseText);
+                if (!err.success) {
+                    navigator.notification.alert(err.message, null, '', 'Cerrar');
+                }
+                $('.loader').hide();
+            },
+            success: function (data) {
+                console.log(data);
+                if (data.success) {
+
+                    $("#name_inmueble").text(data.message);
+
+                    if(data.data.length == 0){
+                        $("#list-hot").html("<h3 style='text-align: center;'>No hay empleados disponibles.</h3><div style='text-align: center;padding-bottom: 50px;'><i class='fa fa-3x fa-exclamation-triangle' aria-hidden='true'></i></div>");
+                    }else{
+                        $.each(data.data, function (index, value) {
+                             
+                            var src_check = "#";                            
+                            var class_check = "check-asistencia";                            
+                            var class_color_check = "";
+                        
+                            if(value.asistencia_actual){
+                                src_check = "javascript: void(0);";
+                                class_check = "";
+                                class_color_check = "color-success";
+                            }
+
+                            var src_check_doble = "#";                            
+                            var class_check_doble = "check-asistencia-doble";                            
+                            var class_color_check_doble = "";
+
+                            if(value.asistencia_actual_doble){
+                                src_check_doble = "javascript: void(0);";
+                                class_check_doble = "";
+                                class_color_check_doble = "color-success";
+                            }
+
+                            $("#list-hot").append('<li class="list-item-new">\n' +
+                                '            <a class="w-inline-block link-blog-list" href="javascript: void();" data-load="1">\n' +
+                                '              <img src="'+value.photo+'" id="img-'+value.ID_NOMINAE+'" style="width: 100%;">\n' +
+                                '              <div class="text-new height-custom" style="height: 220px;">\n' +
+                                '                <h2 class="title-new" style="text-transform: uppercase;" id="name-'+value.ID_NOMINAE+'">' + value.NOMBRE_EMPLEADO + '</h2>\n' +
+                                '               <input type="hidden" id="id-'+value.ID_NOMINAE+'" value="'+value.ID_NOMINAE+'">'+
+                                '               <input type="hidden" id="sucursal-'+value.ID_NOMINAE+'" value="'+sucursal_clave+'">'+
+                                '                <p class="description-new">\n NO_EMPLEADO: ' +
+                                value.ID_NOMINAE +
+                                '                \n' +
+                                '                <div style="margin-top: 10px;">' +
+                                '                <div style="width: 50%;display:block;background: #8C8A8F;float: left;text-align: center; padding: 20px 0;border: 1px solid white;">' +
+                                '                <a href="'+src_check+'" class="'+class_check+'" data-doble="false" data-interno="'+value.ID_NOMINAE+'"><i class="fa fa-check '+class_color_check+'" style="font-size: 40px;color: white;"></i></a>\n' +
+                                '                </div>' +
+                                '                <div style="width: 50%;display:block;background: #8C8A8F;float: left;text-align: center; padding: 20px 0;border: 1px solid white">' +
+                                '                <a href="'+src_check_doble+'" class="'+class_check_doble+'" data-doble="true" data-interno="'+value.ID_NOMINAE+'"><i class="fa fa-check '+class_color_check_doble+'" style="font-size: 40px;color: white;"></i><i class="fa fa-check '+class_color_check_doble+'" style="font-size: 40px;color: white;"></i></a>\n' +
+                                '                </div>' +
+                                '                </div>' +
+                                '                <div>' +            
+                                '                </div>' +
+                                '              </div>\n' +
+                                '            </a>\n' +
+                                '          </li>');
+                        });
+                    }
+
+                    $('.loader').hide();
+
+                    var fichero;
+                    var interno;
+                    var coordenadas;
+                    var photoNew;
+                    var $this;
+                    var $this2;
+                    var $nombre;
+                    var $id;
+                    var $sucursal;
+                    var $doble = false;
+
+                    var onSuccess = function(position) {
+                        /*navigator.notification.alert('Latitude: '          + position.coords.latitude          + '\n' +
+                            'Longitude: '         + position.coords.longitude         + '\n' +
+                            'Altitude: '          + position.coords.altitude          + '\n' +
+                            'Accuracy: '          + position.coords.accuracy          + '\n' +
+                            'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                            'Heading: '           + position.coords.heading           + '\n' +
+                            'Speed: '             + position.coords.speed             + '\n' +
+                            'Timestamp: '         + position.timestamp                + '\n', null, '', 'Cerrar');*/                        
+
+                        coordenadas = position.coords.latitude+','+position.coords.longitude;                
+
+                        //alert($doble);
+                        if($doble){
+                            // TODO: Update asistencia doble
+                            var dataSend2 = {
+                                'NOMBRE_EMPLEADO': $nombre,
+                                'JUSTIFICACION': 'NONE',
+                                'NOTAS': 'NONE',
+                                'USR_ASIS2': 'NONE',
+                                'NOTAS2': 'NONE',
+                                'OBSERVACIONES': 'NONE',
+                                'COORDENADAS': coordenadas,
+                                'FOTO': photoNew,
+                                'ID_NOMINAE': $id,
+                                'CLAVE_SUCURSAL': $sucursal
+                            };                            
+                                            
+                            $.ajax({
+                                type: 'POST',
+                                data: dataSend2,
+                                url: base_url + '/registro_asistencias_doble',                            
+                                error: function (xhr, status, error) {
+                                    window.plugins.spinnerDialog.hide();
+                                    var err = JSON.parse(xhr.responseText);
+                                    if (!err.success) {
+                                        navigator.notification.alert(err.message, null, '', 'Cerrar');                                    
+                                    }
+                                },
+                                success: function (data) {                                    
+                                    if (data.success) {                                    
+                                        $this2.find("i").addClass("color-success");
+                                        $this2.removeClass("check-asistencia");
+                                        $this2.attr('href', 'javascript: void(0);');
+                                        window.plugins.spinnerDialog.hide();
+                                        navigator.notification.alert('La asistencia se aplicó correctamente.', null, '', 'Cerrar');                                    
+                                    }else{
+                                        navigator.notification.alert('Error, se tienen que registrar asistencia previamente.', null, '', 'Cerrar');                                   
+                                    }
+                                }
+                            });
+                        }else{                            
+                            var dataSend = {
+                                'NOMBRE_EMPLEADO': $nombre,
+                                'JUSTIFICACION': 'NONE',
+                                'NOTAS': 'NONE',
+                                'USR_ASIS2': 'NONE',
+                                'NOTAS2': 'NONE',
+                                'OBSERVACIONES': 'NONE',
+                                'COORDENADAS': coordenadas,
+                                'FOTO': photoNew,
+                                'ID_NOMINAE': $id,
+                                'CLAVE_SUCURSAL': $sucursal,
+                                'ASISTENCIA': 1
+                            };
+                
+                            // TODO: Guardar Datos
+                            $.ajax({
+                                type: 'POST',
+                                data: dataSend,
+                                url: base_url + '/registro_asistencias',                            
+                                error: function (xhr, status, error) {
+                                    window.plugins.spinnerDialog.hide();
+                                    var err = JSON.parse(xhr.responseText);
+                                    if (!err.success) {
+                                        navigator.notification.alert(err.message, null, '', 'Cerrar');                                    
+                                    }
+                                },
+                                success: function (data) {
+                                    //alert(data);
+                                    if (data.success) {                                    
+                                        $this.find("i").addClass("color-success");
+                                        $this.removeClass("check-asistencia-doble");
+                                        $this.attr('href', 'javascript: void(0);');
+                                        window.plugins.spinnerDialog.hide();
+                                        navigator.notification.alert('La asistencia se aplicó correctamente.', null, '', 'Cerrar');                                    
+                                    }else{
+                                        navigator.notification.alert('Error, ya se registro asistencia previamente.', null, '', 'Cerrar');                                   
+                                    }
+                                }
+                            });
+                        }                        
+                    };
+
+                    function onError(error) {
+                        window.plugins.spinnerDialog.hide();
+                        navigator.notification.alert('code: '    + error.code    + '\n' +
+                            'message: ' + error.message + '\n', null, '', 'Cerrar');
+                    }
+
+                    function onSuccessCamera(imageData) {
+                        //window.plugins.spinnerDialog.hide();
+                        var image = document.getElementById('img-'+interno);
+                        $nombre = $('#name-'+interno).text();
+                        $id = $('#id-'+interno).val();
+                        $sucursal = $('#sucursal-'+interno).val();
+
+                        image.src = "data:image/jpeg;base64," + imageData;
+                        photoNew = image.src;
+
+                        // Get Location
+                        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+                    }
+
+                    function onFailCamera(message) {
+                        window.plugins.spinnerDialog.hide();
+                        navigator.notification.alert('Failed because: ' + message, null, '', 'Cerrar');
+                    }
+
+                    $(".check-asistencia").on("click", function () {
+                        window.plugins.spinnerDialog.show();
+                        $this = $(this);
+                        interno = $(this).data("interno");
+                        $doble = false;
+
+                        if(typeof navigator !== 'undefined' && typeof navigator.camera !== 'undefined') {
+                            //alert('calling getPicture');
+                            navigator.camera.getPicture(onSuccessCamera, onFailCamera, {
+                                quality: 50,
+                                destinationType: Camera.DestinationType.DATA_URL
+                            });
+                        } else {
+                            alert('no navigator.camera - did you install the plugin?');
+                        }
+                    });
+
+                    $(".check-asistencia-doble").on("click", function () {
+                        window.plugins.spinnerDialog.show();
+                        $this2 = $(this);
+                        interno = $(this).data("interno");
+                        $doble = true;
+
+                        if(typeof navigator !== 'undefined' && typeof navigator.camera !== 'undefined') {
+                            //alert('calling getPicture');
+                            navigator.camera.getPicture(onSuccessCamera, onFailCamera, {
+                                quality: 50,
+                                destinationType: Camera.DestinationType.DATA_URL
+                            });
+                        } else {
+                            alert('no navigator.camera - did you install the plugin?');
+                        }
+                    });
+
+                }
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
