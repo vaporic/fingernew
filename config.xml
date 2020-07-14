@@ -24,22 +24,6 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <plugin name="cordova-plugin-battery-status" />
-    <plugin name="cordova-plugin-media-capture" />
-    <plugin name="cordova-plugin-console" />
-    <plugin name="cordova-plugin-contacts" />
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-device-motion" />
-    <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-globalization" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-media" />
-    <plugin name="cordova-plugin-network-information" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-vibration" />
-    <plugin name="cordova-plugin-actionsheet" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
