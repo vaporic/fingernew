@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="w-section mobile-wrapper">
+    <div class="page-content" id="main-stack">
+      <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title">Chat</div>
+          <a class="w-inline-block navbar-button" href="messages.html" data-load="1">
+            <div class="navbar-button-icon icon ion-ios-arrow-thin-left"></div>
+          </a>
+          <a class="w-inline-block navbar-button right" href="settings.html" data-load="1" data-ix="search-box">
+            <div class="navbar-button-icon smaller icon ion-ios-gear-outline"></div>
+          </a>
+        </div>
+      </div>
+      <div class="body">
+        <ul class="list list-chats">
+          <li class="w-clearfix list-chat" data-ix="list-item">
+            <div class="column-left chat">
+              <div class="image-message chat"><img src="images/placeholder.png">
+              </div>
+            </div>
+            <div class="w-clearfix column-right chat">
+              <div class="arrow-globe"></div>
+              <div class="chat-text">Wow!&nbsp;</div>
+              <div class="chat-time">3 mins ago</div>
+            </div>
+          </li>
+          <li class="list-chat right" data-ix="list-item">
+            <div class="w-clearfix column-right chat right">
+              <div class="arrow-globe right"></div>
+              <div class="chat-text right">These speech bubbles are
+                <br> awesome!
+              </div>
+              <div class="chat-time right">3 min ago</div>
+            </div>
+          </li>
+          <li class="w-clearfix list-chat" data-ix="list-item">
+            <div class="column-left chat">
+              <div class="image-message chat"><img src="images/placeholder.png">
+              </div>
+            </div>
+            <div class="w-clearfix column-right chat">
+              <div class="arrow-globe"></div>
+              <div class="chat-text">I know, right? And so is this template...</div>
+              <div class="chat-time">1 min ago</div>
+            </div>
+          </li>
+          <li class="list-chat right" data-ix="list-item">
+            <div class="w-clearfix column-right chat right">
+              <div class="arrow-globe right"></div>
+              <div class="chat-text right">Yes, they are and they are
+                <br>really easy to use as well.</div>
+              <div class="chat-time right">50 sec ago</div>
+            </div>
+          </li>
+          <li class="w-clearfix list-chat" data-ix="list-item">
+            <div class="column-left chat">
+              <div class="image-message chat"><img src="images/placeholder.png">
+              </div>
+            </div>
+            <div class="w-clearfix column-right chat">
+              <div class="arrow-globe"></div>
+              <div class="chat-text">Yeah, it’s awesome.</div>
+              <div class="chat-time">30 sec ago</div>
+            </div>
+          </li>
+          <li class="list-chat right" data-ix="list-item">
+            <div class="w-clearfix column-right chat right">
+              <div class="arrow-globe right"></div>
+              <div class="chat-text right">Great design</div>
+              <div class="chat-time right">20 sec ago</div>
+            </div>
+          </li>
+          <li class="list-chat right" data-ix="list-item">
+            <div class="w-clearfix column-right chat right">
+              <div class="arrow-globe right"></div>
+              <div class="chat-text right">I bet it has a clean code as well!...</div>
+              <div class="chat-time right">15 sec ago</div>
+            </div>
+          </li>
+          <li class="w-clearfix list-chat" data-ix="list-item">
+            <div class="column-left chat">
+              <div class="image-message chat"><img src="images/placeholder.png">
+              </div>
+            </div>
+            <div class="w-clearfix column-right chat">
+              <div class="arrow-globe"></div>
+              <div class="chat-text">I'm pretty sure it does. I heard customer support is great!</div>
+              <div class="chat-time">7 sec ago</div>
+            </div>
+          </li>
+          <li class="list-chat right" data-ix="list-item">
+            <div class="w-clearfix column-right chat right">
+              <div class="arrow-globe right"></div>
+              <div class="chat-text right">Awesome!</div>
+              <div class="chat-time right">just now</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="input-chat-block">
+        <div class="w-form">
+          <form class="w-clearfix" id="wf-form-Send" name="wf-form-Send" action="#">
+            <input class="w-input input-chat" id="chat-message" type="text" placeholder="Your message" name="email" data-name="Email" required="required">
+            <input class="w-button chat-button" type="submit" value="Send" data-wait="Please wait...">
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
